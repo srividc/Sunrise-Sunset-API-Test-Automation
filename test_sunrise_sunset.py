@@ -114,7 +114,7 @@ def test_day_length():
     load_response = json.loads(get_response.text)
     data = load_response["results"]
     day_length = data["day_length"]
-    date_time_format = '%Y-%m-%dT%H:%M:%S+%f:00'
+    date_time_format = '%Y-%m-%dT%H:%M:%S%z'
     date1 = data["sunrise"]
     date2 = data["sunset"]
     diff = datetime.datetime.strptime(date2, date_time_format) - datetime.datetime.strptime(date1, date_time_format)
