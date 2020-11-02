@@ -1,0 +1,4 @@
+pytest==6.1.2
+requests==2.24.0
+behave==1.2.6
+pytest-html==2.1.1 
