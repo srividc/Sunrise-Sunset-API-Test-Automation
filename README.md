@@ -2,17 +2,20 @@
 # Attribution credits to https://api.sunrise-sunset.org/api
 
 **Pre-requisites** 
+
+* Ensure python3 and pip3 are installed
+* Run the below command to automatically install needed packages
+>pip3 install -r requirements.txt
+
+(OR)
+
 *Install the below manually*
 * Python 3
+* pip 3
 * pytest 6.1.2
 * behave 1.2.6
 * pytest-html 2.1.1 
 * requests   2.24.0
-
-(OR)
-* Ensure python3 is installed
-* Run the below command to automatically install needed packages
->pip3 install -r requirements.txt
 
 **Steps to Run Tests** <br/>
 *Run the below command in the directory you downloaded the tests into* <br/>
