@@ -1,15 +1,21 @@
 # Sunrise-Sunset-API-Test-Automation 
 # Attribution credits to https://api.sunrise-sunset.org/api
 
-**Make sure the below packages are installed to run these tests successfully** 
-* Python 3.9.0
+**Pre-requisites** 
+*Install the below manually*
+* Python 3
 * pytest 6.1.2
 * behave 1.2.6
 * pytest-html 2.1.1 
 * requests   2.24.0
 
+(OR)
+* Ensure python3 is installed
+* Run the below command to automatically install needed packages
+>pip3 install -r requirements.txt
+
 **Steps to Run Tests** <br/>
-*Run the below from the directory you downloaded the tests into on your Mac* <br/>
+*Run the below command in the directory you downloaded the tests into* <br/>
 >python -m pytest -v -s  test_sunrise_sunset.py
 
 *To generate results along with log messages*
