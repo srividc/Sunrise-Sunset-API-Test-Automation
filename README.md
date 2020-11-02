@@ -1,10 +1,14 @@
 # Sunrise-Sunset-API-Test-Automation
-This repository has python tests for the Platform QA Take home Test -Truefit
-What is needed to run these test:
-Python 3.9.0
-Pycharm
-pytest 6.1.2
-behave 1.2.6
-pytest 6.1.2
-pytest-html 2.1.1 -For reporting
-requests   2.24.0
+
+**What is needed to run these tests successfully** 
+* Python 3.9.0
+* pytest 6.1.2
+* behave 1.2.6
+* pytest-html 2.1.1 
+* requests   2.24.0
+
+**Steps to Run Tests** <br/>
+*Run the below from the directory you downloaded the tests into on your Mac* <br/>
+>python -m pytest -v -s  test_sunrise_sunset.py
+
+*To generate results along with log messages*
