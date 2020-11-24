@@ -1,4 +1,5 @@
 # Sunrise-Sunset-API-Test-Automation 
+# Goal - Write Tests to test Public sunrise API
 # Attribution credits to https://api.sunrise-sunset.org/api
 
 **Pre-requisites** 
