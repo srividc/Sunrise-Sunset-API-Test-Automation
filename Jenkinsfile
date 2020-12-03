@@ -4,7 +4,6 @@ pipeline {
     stage('build') {
       steps {      
         sh '/usr/local/bin/pip3 install -r requirements.txt'
-
       }
     }
     stage('test') {
@@ -13,7 +12,7 @@ pipeline {
       }
       post {
         always {
-          
+          echo "I am done"
         }
       }    
     }
