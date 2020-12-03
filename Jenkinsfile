@@ -3,6 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
+        sudo python -m pip install --upgrade pip
+        sudo pip install --upgrade setuptools       
         sh '/usr/local/bin/pip install -r requirements.txt'
       }
     }
