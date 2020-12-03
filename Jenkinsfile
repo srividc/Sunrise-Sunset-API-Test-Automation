@@ -9,7 +9,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'python -m pytest -v -s --capture=sys test_sunrise_sunset.py --html=report.html
+        sh 'python -m pytest -v -s test_sunrise_sunset.py'
       }
       post {
         always {
