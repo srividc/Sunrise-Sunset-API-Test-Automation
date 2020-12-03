@@ -7,7 +7,7 @@
     }
     stage('test') {
       steps {
-        sh 'python test.py'
+        sh 'python3 test_sunrise_sunset.py'
       }   
     }
   }
