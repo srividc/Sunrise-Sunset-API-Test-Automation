@@ -15,11 +15,17 @@ pipeline {
         //sh 'python3 test_sunrise_sunset.py'
         sh 'python3 -m pytest -v -s --capture=sys test_sunrise_sunset.py --html=report.html'
       }
-      post {
+        post {
         always {
-          echo "I am done"
+          mail to: 'srividhya.chandrasekar@gmail.com', subject: 'The Python API tests were run :('
         }
-      }    
+          success{
+            mail to: 'srividhya.chandrasekar@gmail.com', subject: 'The Python API tests Passed! :)'
+          }
+        failure {
+            mail to: 'srividhya.chandrasekar@gmail.com', subject: 'The Python API tests failed :('
+        }
+    }
     }
   }
 }
