@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {      
-        sh 'sudo /usr/local/bin/pip install -r requirements.txt'
-        sh 'sudo pip install setuptools'
+        sh '/usr/local/bin/pip install -r requirements.txt'
+        sh 'pip install setuptools'
         sh 'python -m ensurepip'
       }
     }
