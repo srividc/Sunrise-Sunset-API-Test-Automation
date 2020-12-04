@@ -6,6 +6,7 @@ pipeline {
         sh '/usr/local/bin/pip3 install -r requirements.txt'
         sh 'pip3 install setuptools'
         sh 'pip3 install requests --user'
+        sh 'pip3 install behave --user'
       }
     }
     stage('test') {
