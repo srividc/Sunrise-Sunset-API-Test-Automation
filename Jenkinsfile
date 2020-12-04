@@ -5,6 +5,8 @@ pipeline {
       steps {      
         sh '/usr/local/bin/pip3 install -r requirements.txt'
         sh 'pip3 install setuptools'
+        sh 'pip3 uninstall requests'
+        sh 'pip3 install requests'
         sh 'python3 -m ensurepip'
       }
     }
