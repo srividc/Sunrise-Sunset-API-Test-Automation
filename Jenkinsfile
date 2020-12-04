@@ -3,14 +3,14 @@ pipeline {
   stages {
     stage('build') {
       steps {      
-        sh '/usr/local/bin/pip install -r requirements.txt'
-        sh 'pip install setuptools'
-        sh 'python -m ensurepip'
+        sh '/usr/local/bin/pip3 install -r requirements.txt'
+        sh 'pip3 install setuptools'
+        sh 'python3 -m ensurepip'
       }
     }
     stage('test') {
       steps {
-        sh 'python test_sunrise_sunset.py'
+        sh 'python3 test_sunrise_sunset.py'
       }
       post {
         always {
