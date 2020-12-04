@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'python3 -m pytest -v -s test_sunrise_sunset.py'
+        sh 'python3 test_sunrise_sunset.py'
       }
       post {
         always {
