@@ -3,10 +3,11 @@ pipeline {
   stages {
     stage('build') {
       steps {      
-        sh '/usr/local/bin/pip3 install -r requirements.txt'
         sh 'pip3 install setuptools'
         sh 'pip3 install requests --user'
         sh 'pip3 install behave --user'
+        sh 'pip3 install pytest --user'
+        sh 'pip3 install pytest-html --user'
       }
     }
     stage('test') {
