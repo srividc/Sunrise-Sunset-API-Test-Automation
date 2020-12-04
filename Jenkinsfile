@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {      
         sh '/usr/local/bin/pip3 install -r requirements.txt'
+        sh '/usr/local/bin/pip3 install requests'
       }
     }
     stage('test') {
