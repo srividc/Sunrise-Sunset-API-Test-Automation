@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {      
         sh '/usr/local/bin/pip3 install -r requirements.txt'
-        sh 'python3 -m ensurepip'
+        sh 'python3 -m ensurepip3'
         sh '/usr/local/bin/pip3 install requests'
       }
     }
