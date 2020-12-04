@@ -16,13 +16,15 @@ pipeline {
       }
         post {
         always {
-          mail to: srividc26@gmail.com, subject: 'The Python API tests were run '
+          message '$ The Python API tests {currentBuild.fullDisplayName} were run'
         }
           success{
-            mail to: srividhya.chandrasekar@gmail.com, subject: 'The Python API tests Passed! :)'
+             color: 'good'
+            message '$ The Python API tests {currentBuild.fullDisplayName} were successful'
           }
         failure {
-            mail to: srividhya.chandrasekar@gmail.com, subject: 'The Python API tests failed :('
+            color: 'bad'
+            message '$ The Python API tests {currentBuild.fullDisplayName} failed'
         }
     }
     }
