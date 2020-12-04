@@ -19,11 +19,11 @@ pipeline {
           message '$ The Python API tests {currentBuild.fullDisplayName} were run'
         }
           success{
-             color: 'good'
+             color: 'good',
             message '$ The Python API tests {currentBuild.fullDisplayName} were successful'
           }
         failure {
-            color: 'bad'
+            color: 'RED',
             message '$ The Python API tests {currentBuild.fullDisplayName} failed'
         }
     }
