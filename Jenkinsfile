@@ -16,13 +16,13 @@ pipeline {
       }
         post {
         always {
-          message '$ The Python API tests {currentBuild.fullDisplayName} were run'
+          echo 'The Python API tests were run'
         }
           success{
-            message '$ The Python API tests {currentBuild.fullDisplayName} were successful'
+            echo 'The Python API tests were successful'
           }
         failure {
-            message '$ The Python API tests {currentBuild.fullDisplayName} failed'
+            echo 'The Python API tests failed'
         }
     }
     }
