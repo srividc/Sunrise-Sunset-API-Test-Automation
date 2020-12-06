@@ -1,3 +1,5 @@
+properties([pipelineTriggers([githubPush()])])
+
 pipeline {
   agent any
   stages {
@@ -16,6 +18,7 @@ pipeline {
       }
         post {
         always {
+          deleteDir()
           echo 'The Python API tests were run'
         }
           success{
