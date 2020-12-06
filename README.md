@@ -10,7 +10,7 @@
 
 (OR)
 
-*Install the below manually*
+*Install the below manually* 
 * Python 3
 * pip 3
 * pytest 6.1.2
